@@ -6,7 +6,7 @@ SRC="yoga"
 BIN="$SRC/build_shared_odin"
 
 if [ ! -d "$SRC" ]; then
-    git clone --depth=1 https://github.com/facebook/yoga "$SRC"
+    git clone --revision cfdacac0e3c2e91ab15939027688756271a66025 --depth=1 https://github.com/facebook/yoga "$SRC"
 fi
 
 if [ "$(uname -s)" = "Darwin" ]; then

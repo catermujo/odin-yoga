@@ -7,7 +7,7 @@ set SRC_CMAKE=%CD%\%SRC%
 set BIN=%SRC%\build_static_odin
 
 if not exist "%SRC%" (
-    git clone --depth=1 https://github.com/facebook/yoga "%SRC%" || exit /b 1
+    git clone --revision cfdacac0e3c2e91ab15939027688756271a66025 --depth=1 https://github.com/facebook/yoga "%SRC%" || exit /b 1
 )
 
 echo Configuring build...
